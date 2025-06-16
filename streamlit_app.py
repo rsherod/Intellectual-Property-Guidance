@@ -1,4 +1,4 @@
-# Low-Intensity Strategies Coach (R. Sherod, fall 2024)
+# Intellectual Property Guidance
 import streamlit as st
 import google.generativeai as genai
 from PIL import Image
