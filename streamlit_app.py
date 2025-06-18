@@ -254,6 +254,14 @@ def build_system_prompt():
 # Main app layout
 def main():
     # Initialize Gemini (Firebase removed)
+    try:
+        api_key = st.secrets["GOOGLE_API_KEY"]
+    except KeyError:
+        api_key = os.getenv("GOOGLE_API_KEY")
+        if not api_key:
+            st.error("⚠️ Google API Key not found!")
+            st.stop()
+
     genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
     # Header and description
