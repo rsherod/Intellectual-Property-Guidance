@@ -4,4 +4,4 @@ Pillow
 PyPDF2
 reportlab
 python-docx
-firebase-admin
+
