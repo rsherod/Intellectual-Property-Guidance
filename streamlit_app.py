@@ -262,7 +262,7 @@ def main():
             st.error("⚠️ Google API Key not found!")
             st.stop()
 
-    genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
+    genai.configure(api_key=api_key)
 
     # Header and description
     st.markdown("<h1 style='text-align: center; color: #2E86AB;'>IP Licensing Agreement Assistant</h1>", unsafe_allow_html=True)
